@@ -1,0 +1,6 @@
+; demo_lzh.def : Declares the module parameters for the DLL.
+
+LIBRARY      "demo_lzh"
+
+EXPORTS
+    ; Explicit exports can go here

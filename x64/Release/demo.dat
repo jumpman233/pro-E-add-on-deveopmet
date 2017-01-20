@@ -1,0 +1,6 @@
+name ¿ª·¢Ê¾Àý
+startup dll
+exec_file D:\project\demo_lzh\x64\Release\demo_lzh.dll
+text_dir D:\project\demo_lzh\x64\Release\text
+allow_stop true
+END
