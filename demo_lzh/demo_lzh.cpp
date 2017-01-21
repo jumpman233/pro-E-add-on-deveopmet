@@ -69,8 +69,8 @@ static uiCmdAccessState AccessDefault(uiCmdAccessMode access_mode)
 int Menu1(uiCmdCmdId command,uiCmdValue * p_value,void * p_push_command_data)
 {
 	int i = 0;
-	ProUIDialogCreate("a",NULL);
-	ProUIDialogActivate("a",&i);
+	ProUIDialogCreate("demo","angle");
+	ProUIDialogActivate("demo",&i);
 	//创建模型
 	ProMdl tpl;
 	ProMdlLoad(L"D:\\Demo\\Publish\\start.prt",PRO_MDL_PART,PRO_B_FALSE,&tpl);
@@ -628,6 +628,7 @@ extern "C" int user_initialize()
 		cmd_id,
 		L"demo.txt");
 
+	ProUITranslationFilesEnable();
 	AFX_MANAGE_STATE(AfxGetStaticModuleState());
 	return 0;
 }
